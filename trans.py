@@ -1,10 +1,8 @@
 #!/usr/bin/python
 
-#import simplejson as json
-import json
-import requests
+import sys,os
+import json, requests
 from sys import argv
-import sys
 
 if(len(argv) != 3):
     print "Usage:\n\n python trans.py en-pl string"
@@ -12,8 +10,11 @@ if(len(argv) != 3):
 
 _script, lngs, trans_string = argv
 
+# GET SCRIPTDIR:
+_script_dir = os.path.dirname(os.path.realpath(__file__))
 
-APIKEY=open('APIKEY','r').read()
+# get APIKEY
+APIKEY=open(_script_dir+'/APIKEY','r').read()
 
 lngs = lngs.split('-')
 

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-import simplejson as json
+#import simplejson as json
+import json
 import requests
 from sys import argv
 import sys

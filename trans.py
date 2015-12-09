@@ -10,11 +10,8 @@ if(len(argv) != 3):
 
 _script, lngs, trans_string = argv
 
-# GET SCRIPTDIR:
-_script_dir = os.path.dirname(os.path.realpath(__file__))
-
 # get APIKEY
-APIKEY=open(_script_dir+'/APIKEY','r').read()
+APIKEY=open(os.environ['HOME']+'/.config/translator/APIKEY','r').read()
 
 lngs = lngs.split('-')
 

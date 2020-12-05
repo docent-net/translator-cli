@@ -1,0 +1,2 @@
+credentialsFile: /full/path/to/your/gcp/service-account/auth.json
+gcpProject: GCP-PROJECT-NAME-HERE

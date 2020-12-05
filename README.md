@@ -4,17 +4,14 @@ I just want to be able to translate things in CLI. That's what this project is f
 
 ** Requirements **
 
-Put your Google-Translate APIKEY into ~/.config/translator/APIKEY
+1. You need a valid project in Google Cloud Platform
+1. You need to create service account (w/at least "Cloud Translation API User" permissions) and export JSON auth file somewhere to your disk
+1. Lastly, you need to create and fill configuration file in **~/.translator-cli.yml** - use **cli-config-template.yml** as template
 
-More about [setting APIKEYs in Google Apps](https://support.google.com/cloud/answer/6158862?hl=en&ref_topic=6262490)
+**Usage:**
 
-**Usage:** ```python trans.py <trans_langs> string```
+```translator-cli translate -s <source-lang> -d <destination-lang> text to translate```
 
-Where **<trans_langs>** has format **sourcelang-destinationlang** e.g. **en-pl** when translating
-from english to polish
+**Example:**
 
-**Example:** ```python trans.py en-pl core```
-
-This project uses **google-translator API**:
-- [developers' console](https://console.developers.google.com/project/)
-- [API webpage](https://cloud.google.com/translate/v2)
+```translator-cli translate -s en -d es Is it snowing now?```

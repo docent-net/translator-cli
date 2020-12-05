@@ -12,6 +12,11 @@ I just want to be able to translate things in CLI. That's what this project is f
 
 ```translator-cli translate -s <source-lang> -d <destination-lang> text to translate```
 
+But it's more handy to actually create aliases in your shell's config file
+(e.g. **.bashrc** or **.zshrc**):
+
+```echo "alias tpl=\"translator-cli translate -s pl -d en\"" >> ~/.zshrc```
+
 **Example:**
 
 ```translator-cli translate -s en -d es Is it snowing now?```

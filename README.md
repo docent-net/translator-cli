@@ -1,8 +1,8 @@
-# translator-cli #
+# translator-cli
 
 I just want to be able to translate things in CLI. That's what this project is for :)
 
-** Requirements **
+**Requirements:**
 
 1. You need a valid project in Google Cloud Platform
 1. You need to create service account (w/at least "Cloud Translation API User" permissions) and export JSON auth file somewhere to your disk

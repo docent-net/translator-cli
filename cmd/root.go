@@ -30,6 +30,7 @@ func initConfig() {
 	} else {
 		viper.SetConfigName(".translator-cli") // name of config file (without extension)
 		viper.AddConfigPath("$HOME/")          // call multiple times to add many search paths
+		viper.AddConfigPath("$HOME/.translator-cli/")          // call multiple times to add many search paths
 		viper.AddConfigPath(".")               // optionally look for config in the working directory
 	}
 

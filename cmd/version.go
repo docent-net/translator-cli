@@ -15,6 +15,6 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of translate-cli",
 	Long:  `All software has versions. This is translate-cli's.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("translate-cli 0.0.1")
+		fmt.Println("translate-cli 1.1.0")
 	},
 }
